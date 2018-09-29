@@ -1,0 +1,8 @@
+server:
+  port: 9700
+spring:
+  application:
+    name: mongo_boot
+  data:
+    mongodb:
+      uri: mongodb://alex:becauseofyou7@47.92.157.135:27017/shop
