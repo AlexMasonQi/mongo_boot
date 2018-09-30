@@ -31,7 +31,7 @@ public class GoodsDaoImpl implements GoodsDao
     @Override
     public void updateGoods(Goods goods)
     {
-        Query query = new Query(Criteria.where("id").is(goods.getId()));
+        Query query = new Query(Criteria.where("goodsId").is(goods.getGoodsId()));
         Update update = new Update().set("goodsName", goods.getGoodsName()).set("shopPrice", goods.getShopPrice());
 
         //更新结果返回第一条

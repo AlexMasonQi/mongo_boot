@@ -5,4 +5,14 @@ spring:
     name: mongo_boot
   data:
     mongodb:
-      uri: mongodb://alex:becauseofyou7@47.92.157.135:27017/shop
+      authentication-database: admin
+      database: shop
+      host: 47.92.157.135
+      username: alex
+      password: becauseofyou7
+      port: 27017
+      connections-per-host: 20
+      min-connections-per-host: 20
+logging:
+  level:
+    org .springframework.data.mongodb.core: debug

@@ -19,7 +19,7 @@ public class GoodsController
     @Autowired
     private GoodsDao goodsDao;
 
-    @GetMapping("/goods/{name}")
+    @GetMapping("/goods/{goodsName}")
     public Goods findGoodsByGoodsName(@PathVariable String goodsName)
     {
         return goodsDao.findGoodsByGoodName(goodsName);
@@ -45,7 +45,7 @@ public class GoodsController
         return tag;
     }
 
-    @GetMapping("/goods/updateGoods/")
+    @GetMapping("/goods/updateGoods")
     public Boolean updateGoods()
     {
         Boolean tag = false;
